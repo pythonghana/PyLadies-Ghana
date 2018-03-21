@@ -9,7 +9,7 @@ http://ghana.pyladies.org
 # Running the site locally
 
 ## Requirments
-* Create a .env file with the settings like those in .env.example
+* Create a .env file in the project root directory(where manage.py is) with the settings like those in .env.example
 * [Python 3.6.3](https://python.org)
 * [Django 2.0.2](https://www.djangoproject.com/)
 * [virtualenv](https://virtualenv.pypa.io/en/stable/) or [Virtualenvwrapper](https://virtualenvwrapper.readthedocs.io)
