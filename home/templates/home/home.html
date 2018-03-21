@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+   <!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('/static/img/background1.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+        <!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">WELCOME TO PYTHON LADIES GHANA</h1>
+							<p class="white-text">
+                                Python Ladies Users Community in Ghana.
+							</p>
+                            <button class="white-btn"><a href="{% url 'resources:resources' %}">Get Started!</a></button>
+                            <button class="main-btn"><a href="{% url 'about:about' %}">Learn more</a></button>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+    </header>
+
+	<!-- About -->
+	<div id="about" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Welcome To Our Site</h2>
+				</div>
+				<!-- /Section header -->
+
+                <div>
+                    <p>PyLadies Ghana is Mentor-ship group in Ghana focused on helping more women become active participants and leaders in the Python open-source Community.</p>
+                </div>
+                <div class="banner-info dark margin-bottom-10">
+							<div class="overflow-h">
+								<p><strong>Our vision</strong></p>
+								<p>PyLadies Ghana's mission is to promote the growth of a lively and dynamic community of female users of the Python programming language and to promote the use of the latter.<br />
+                                    PyLadies Ghana also aims to disseminate the Local Python knowledge to build a stronger developer community. <br />
+                                    PyLadies Ghana promotes Free and Open Source Software, favors its adoption within the community, and collaborates with community players to achieve this goal.</p>
+							</div>
+						</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /About -->
+
+    <!-- Service -->
+	<div id="service" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+
+	<!-- Why Choose Us -->
+	<div id="features" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- why choose us content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">WHY PYTHON</h2>
+					</div>
+                    <p>Python is a general-purpose language, which means it can be used to build just about anything, which will be made easy with the right tools/libraries. Professionally, Python is great for backend web development, data analysis, artificial intelligence, and scientific computing. Many developers have also used Python to build productivity tools, games, and desktop apps, so there are plenty of resources to help you learn how to do those as well.<em>“Why” Python has emerged as one of the most popular programming languages on the market are</em> :</p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+                        <p><strong>Quick to setup</strong> : Python is easy to download, even for the newbie; careful documentation takes you through the download and setup steps in either Windows, Mac, or Linux environments. Tons of support and documentation make Python learning fairly manageable. If you want to jump right into Python without any need for download on your machine, just go to one of many online tutorials like Codecademy.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+                        <p><strong>Python is fast</strong> : Python has developed a reputation as a solid, high-performance language. Lots has been done in recent years to get to this point. The PyPy project aims to speed up Python as a whole (and is doing a great job of it). And Numba is another tool that can offer amazing speedups by implementing high performance functions written directly in Python.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+                        <p><strong>Python has broad support</strong> : The applications for Python are broad and varied; it’s used by individuals and big industry players alike in everything from systems automation, testing, and ETL to gaming, CGI and web development. Disney uses Python to help power their creative process. And Mozilla releases tons of open source packages built in Python. Bank of America uses Python to build new products and interfaces within the bank’s technology infrastructure.Python is widely used by a number of big companies like Google, Pinterest, Instagram, Disney, Yahoo!, Nokia, IBM, and many others.Not to mention, since a lot of big companies rely on the language, you can make good money as a Python developer.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+                        <p><strong>Ease of use</strong> : Python gets a lot of accolades for being easy to learn, and rightfully so. The learning curve is very gradual. Other languages can be quite steep. Python places a heavy emphasis on readability, as shown by its comparison with other object-oriented languages.</p>
+					</div>
+				</div>
+				<!-- /why choose us content -->
+
+				<!-- About slider -->
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+						<img class="img-responsive" src="{% static 'img/python.jpg' %}" alt="">
+						<img class="img-responsive" src="{% static 'img/python5.jpg' %}" alt="">
+						<img class="img-responsive" src="{% static 'img/python3.jpg' %}" alt="">
+						<img class="img-responsive" src="{% static 'img/about2.jpg' %}" alt="">
+					</div>
+				</div>
+				<!-- /About slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+    </div></div>
+	</div>
+	<!-- /Why Choose Us -->
+
+
+
+{% endblock %}
