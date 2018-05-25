@@ -236,12 +236,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .main-btn {
-    background: #6195FF;
+    background: green;
     color: #FFF;
 }
 
 .white-btn {
-    background: #FFF;
+    background: yellow;
     color: #10161A !important;
 }
 
