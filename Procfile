@@ -1,1 +1,1 @@
-web:gunicorn PyLadiesGhana.wsgi --log-file -
+web: gunicorn PyLadiesGhana.wsgi --log-file -
