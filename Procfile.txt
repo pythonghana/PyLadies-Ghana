@@ -1,1 +1,1 @@
-web:python manage.py collectstatic --noinput; gunicorn PyLadiesGhana.wsgi --log-file -
+web:python manage.py collectstatic --noinput;python manage.py runserver 0.0.0.0:$PORT --noreload; gunicorn PyLadiesGhana.wsgi --log-file -
