@@ -1,10 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html %}
 
-</body>
-</html>
+
+{% block title % }404{% endblock %}
+
+{% block content %}
+
+<!-- main content
+   ================================================== -->
+   <main id="main-404-content" class="main-content-particle-js">
+
+   	<div class="content-wrap">
+
+		   <div class="shadow-overlay"></div>
+
+		   <div class="main-content">
+		   	<div class="row">
+		   		<div class="col-twelve">
+			  		
+			  			<h1 class="kern-this">404 Error.</h1>
+			  			<p>
+						Oooooops! Looks like nothing was found at this location.
+						Maybe try on of the links below.
+			  			</p>
+	   			
+
+			   	</div> <!-- /twelve --> 		   			
+		   	</div> <!-- /row -->    		 		
+		   </div> <!-- /main-content --> 
+{% endblock %}
+
+	{% block footer %}
+		   <footer>
+		   	<div class="row">
+
+		   		<div class="col-seven tab-full social-links pull-right">
+			   		<ul>
+				   		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+					      <li><a href="https://twitter.com/pyladiesghana"><i class="fa fa-twitter"></i></a></li>
+					      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					      <li><a href="#"><i class="fa fa-instagram"></i></a></li>   			
+				   	</ul>
+			   	</div>
+		   			
+		  			<div class="col-five tab-full bottom-links">
+			   		<ul class="links">
+				   		<li><a href="{% url 'home:home' %}">Homepage</a></li>
+				        <li><a href="{% url 'about:about' %}">About</a></li>
+				        <li><a href="mailto:ghana@pyladies.com">Report Error</a></li>			                    
+				   	</ul>
+
+				   		<div class="credits">
+				   		<p>Copyright © 2017 - 2018 PyLadies Ghana. All Rights Reserved. Powered by <a href="https://www.djangoproject.com/" target="_blank">Django</a></p>
+				   	</div>
+			   	</div>   		   		
+
+		   	</div> <!-- /row -->    		  		
+		   </footer>
+
+		</div> <!-- /content-wrap -->
+   
+   </main> <!-- /main-404-content -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+{% endblock %}
