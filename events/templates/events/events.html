@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load pinax_events_tags %}
+
+{% block title %}
+Events
+{% endblock %}
+
+
+{% block content %}
+{% spaceless %}
+<br > <br >
+
+<div class="container">
+<center><h2 class="title">Upcoming Events</h1></center>
+
+{% events as event_items %}
+<center>
+      <section class="event-list">
+        {% for event in event_items %}
+            <li>
+               <h3><a href="{{ event.url }}">{{ event.title }}</a></h2>
+            </li>
+            <article class="event" style="{% if event.secondary_image_thumb %}background-image:url({% static event.secondary_image_thumb.url %});{% endif %}">
+                <section class="event-img">
+                    <a href="{{ event.url }}">
+                        {% if event.image_thumb %}<img src="{{ event.image_thumb.url }}" width="400" />{% endif %}
+                    </a>
+                </section>
+                <br >
+                <ul class="event-details">
+                    <li class="meta">
+                        <span>
+                            Where: {{ event.where }}
+                        </span>
+                        <br >
+                        <span>
+                            When: {{ event.start_date }} &mdash; {{ event.end_date }}
+                        </span>
+                    </li>
+                    <li class="event-description">
+                        {{ event.what_html|safe|linebreaks }}
+                        <br >
+                        <hr style="background-color: #fff;border-top: 2px dashed #8c8b8b;"> 
+                    </li>
+                </ul>
+            </article>
+        {% endfor %}
+    </section>
+    </center>
+</div>
+    <br />
+
+    {% endspaceless %}
+{% endblock %}

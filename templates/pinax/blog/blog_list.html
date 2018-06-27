@@ -1,0 +1,27 @@
+{% extends "pinax/blog/blog_base.html" %}
+
+{% block head_title_base %}{{ SITE_NAME }}{% endblock %}
+
+
+{% block content %}
+<br ><br >
+<div class="container">
+    {% if post_list %}
+        <div class="post-list">
+            {% for post in post_list %}
+                <div class="post">
+                    <center><h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2></center>
+                    <center>{% include "pinax/blog/dateline.html" %}</center>
+                    <center><div class="teaser">{{ post.teaser_html|safe }}</div></center>
+                    <center><p class="more"><a href="{{ post.get_absolute_url }}" class="post-link">read more...</a></p></center>
+                    <hr style="background-color: #fff;border-top: 2px dashed #8c8b8b;"> 
+                </div>
+            {% endfor %}
+        </div>
+        <center>{% include "pagination/_pagination.html" %}</center>
+    {% else %}
+        <center><p class="alert alert-info lead">No blog posts have been published.</p></center>
+    {% endif %}
+</div>
+<br ><br ><br ><br ><br ><br >
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Support Us | Python Ladies Ghana" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+<header id="top" class="sub-header">
+        <div class="container">
+        </div>
+        <!-- end .container -->
+    </header>
+    
+      <section>
+      	<div class="container">
+      	 <div class="col-sm-12">
+                     <div class="section-title wow fadeInUp">
+                        <h4>  </h4>
+                     </div>
+                    <div class="panel panel-danger wow fadeInLeft">
+                          <div class="row">
+							      
+							      	<div class="container">
+							          <center>  <h3>Support Us<br><small>Become A Sponsor</small></h3><br>
+							            <h6>Why we need sponsors</h6>
+							            <p>Python Ghana Ladies is wholly organized by volunteers. We therefore need sponsors to help us cover the costs of:
+							            <ul>
+							                -<li>basic running expenses;</li>
+							                -<li>provide a decent location to host Meetups;</li>
+							                -<li>reimburse the travel and accommodation costs of our speakers;</li>
+											-<li>provide financial assistance to participant who cannot otherwise afford to attend the Meetups;</li>
+							                -<li>catering and refreshments;</li>
+							                -<li>educational materials for the tutorials;</li>
+							                -<li>video recording of talks!</li>
+							            </ul></center> 
+							              <br><br>
+
+							              <h6>Sponsor Packages</h6>
+							              <table>
+							                  <tr>
+							                      <td><h5 style="color: #000; text-shadow: 2px 2px 3px #cd7f32">Bronze <span><span>($500)</span></span></h5></td>
+							                      <td><h5 style="color: #000; text-shadow: 2px 2px 3px #C0C0C0">Silver <span><span>($1000)</span></span></h5></td>
+							                  </tr>
+							                  <tr>
+							                    <td>
+									                   <center> <p>Includes:</p>
+														<ul>
+															<li>a thank-you in the programme booklet</li><span></span>
+															<li>your exhibition materials at the venue</li><span></span>
+															<li>your logo, and a link on our website</li><span></span>
+															<li>mentions in press releases conference  </li><span></span>
+															<li>news items, email and Twitter messages</li><span></span> 
+															<li>to the community</li>
+														</ul></center>
+									          	</td>
+
+							                    <td>
+														<center><p>Similar to Bronze, plus:</p>
+
+														<ul><li>All of the above</li>
+															<li><strong>2 tickets</strong> to the conference</li>
+															<li>a stand at the venue</li>
+															<li>a quarter-page advertisement in the programme</li>
+															<li>more prominent mentions</li>
+														</ul></center>
+							                    </td>
+							                  </tr>
+							              </table>
+							              <table>
+							                  <tr>
+							                      <td><h5 style="color: #000; text-shadow: 2px 2px 3px #FFD700">  Gold <span>($2500)</span></h5></td>
+							                      <td><h5 style="color: #000; text-shadow: 2px 2px 3px #b9f2ff"><b>Diamond </b><span>($3500)</span></h5></td>
+							                  </tr>
+							                  <tr>
+							                    <td>
+							                    	<p>Similar to Silver, plus:</p>
+													<ul>
+														<li>All of the above</li>
+														<li>Send Recruiting emails to attendees on your behalf</li>
+														<li><strong>4 tickets</strong> to the conference</li>
+														<li>a half-page advertisement in the conference programme</li>
+														<li>even more prominent mentions</li>
+													</ul>
+							                    </td>
+							                    <td>
+							                    	<p>Similar to Gold, plus:</p>
+													<ul>
+														<li>All of the above</li>
+														<li><strong>6 tickets</strong> to the conference</li>
+														<li>a full-page advertisement in the conference programme</li>
+														<li>very prominent mentions</li>
+														<li>Recruitment stand in exhibition hall</li>
+														<li>Company's Brochures in welcome kit (Provided by the company) </li>
+														<li>Opportunity to address the conference</li>
+													</ul>
+							                    </td>
+							                  </tr>
+							              </table>
+							              <br >
+							             <center><h6><b>Special Sponsorship</b></h6></center> 
+											<p> Our special sponsorship package is designed for organisations and individuals looking to make a contribution to building a stronger Python community in Ghana through PyCon Ghana. If you would like to Sponsor other aspects of the conference such as Catering, Media, Internet or any form of sponsorship both in cash or in kind, please reach out to us for more Information.
+											</p>
+											</br>
+											<center><p> <a href="{% static 'files/Prospectus.pdf' %}" download="Python Ghana Ladies Prospectus.pdf"><button style="font-size:16px"><b>Download our Prospectus HERE</b><i class="fa fa-download"></i></button></a> <br><br></center>
+
+
+											<center><p><b>If you are interested and wish to sponsor PyCon Ghana, then please contact us via
+							                  <a href="mailto:ghana@pyladies.com">ghana@pyladies.com</a>.</b><br> You can see our current Sponsors <a href="{% url 'sponsors:sponsors' %}">Here</a></p></center>
+
+							          </div>
+							      </div>
+							      
+							</div>
+			      </div>
+</div>
+    </section>
+</p>
+
+{% endblock %}
