@@ -135,13 +135,6 @@
 				                </div>
 				            {% endfor %}
 				        </div>
-				   
-				    {% if announcement.dismiss_url %}
-					        <form class="form ajax" data-replace-closest=".announcement" action="{{ announcement.dismiss_url }}" method="post">
-					            {% csrf_token %}
-					            <button class="btn btn-default">Clear</button>
-					        </form>
-					    {% endif %}
 			</div>
 				    <br ><br >	<!-- /Row -->
 		</div>
