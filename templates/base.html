@@ -36,6 +36,9 @@
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
 
+	<!-- Sponsors Stylesheet -->
+	<link rel="stylesheet" href="{% static 'sponsors/css/sponors.css' %}">
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -74,12 +77,14 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="{% url 'home:home' %}">Home</a></li>
 					<li><a href="{% url 'about:about' %}">About</a></li>
-                    <li><a href="https://ghana-pyladies-forum.herokuapp.com/">Forum</a></li>
+					 <li><a href="{% url 'pinax_blog:blog' %}">Blog</a>
+                    <li><a href="/">Forum</a></li>
                     <li><a href="{%  url 'locations:locations' %}">Locations</a></li>
-                    <li><a href="/">Blog</a>
+                    <li><a href="{%  url 'events:events' %}">Events</a></li>
+                    <li><a href="{% url 'sponsors:sponsors' %}">Sponsors</a></li>
 					<li><a href="{% url 'coc:coc' %}">Code Of Conduct</a></li>
 					<li><a href="{% url 'resources:resources' %}">Resources</a></li>
-                    <li><a href="{% url 'sponsors:sponsors' %}">Sponsors</a></li>
+                    <li><a href="{% url 'photologue:gallery-list' %}">Gallery</a></li>
 					<li><a href="{% url 'contact:contact' %}">Contact</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -94,7 +99,7 @@
 {% endblock %}
 
 
-{% block footer %}
+
 	<!-- Footer -->
 	<footer id="footer" class="sm-padding bg-dark">
 
@@ -139,7 +144,6 @@
 
 	</footer>
 	<!-- /Footer -->
-{% endblock %}
 
 	<!-- Back to top -->
 	<div id="back-to-top"></div>

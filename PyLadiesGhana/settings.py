@@ -14,6 +14,7 @@ import os
 from unipath import Path
 import dj_database_url
 from decouple import config, Csv
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,6 +42,25 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+
+    # third_party_apps
+    'imagekit',
+    'pinax.events',
+    'pinax.blog',
+    'pinax.images',
+    'pinax.templates',
+    'pinax.announcements',
+    'photologue',
+    'sortedm2m',
+    'crispy_forms',
+    #'sorl.thumbnail',
+    #'pure_pagination',
+    #'pybb',
+    #'account',
+    #'captcha',
+
+
 
     # my_apps
     'home',
@@ -50,6 +70,7 @@ INSTALLED_APPS = [
     'resources',
     'sponsors',
     'contact',
+    'events',
 ]
 
 MIDDLEWARE = [
@@ -61,6 +82,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'pybb.context_processors.processor',
 ]
 
 ROOT_URLCONF = 'PyLadiesGhana.urls'
@@ -128,9 +150,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 
 
 # Media Files ( User Media Uploads )
@@ -172,3 +200,31 @@ JET_THEMES = [
         'title': 'Light Gray'
     }
 ]
+
+# Django SITE_ID
+SITE_ID = 1
+
+# Pagination settings
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 2,
+
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+}
+
+# Pybb
+#AUTH_PROFILE_MODULE = 'pybb.Profile'
+#PYBB_PROFILE_RELATED_NAME = None
+
+
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+#PYBB_TEMPLATE = "base.html"
+#PYBB_NICE_URL = True
+#PYBB_ATTACHMENT_ENABLE = True
+
+# Sponsors
+SPONSOR_EXPIRATES = False
+SPONSOR_EXPIRE_ON_MONTHS = 12
+SPONSOR_LOGO_WIDTH = 200
+SPONSOR_LOGO_HEIGHT = None

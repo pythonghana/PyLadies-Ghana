@@ -60,6 +60,22 @@ h1, h2, h3, h4, h5, h6 {
     color: #10161A;
 }
 
+#announcements {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: red;   
+}
+
+#home {
+    
+    color: currentColor;
+    text-decoration: none;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
 h1 {
     font-size: 54px;
 }
