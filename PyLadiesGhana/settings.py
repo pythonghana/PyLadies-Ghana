@@ -149,21 +149,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
-
 
 # Media Files ( User Media Uploads )
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# whitenoise storage
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Django - Jet theme colors for admin backend.
 JET_DEFAULT_THEME = 'light-gray'
@@ -223,8 +221,3 @@ PAGINATION_SETTINGS = {
 #PYBB_NICE_URL = True
 #PYBB_ATTACHMENT_ENABLE = True
 
-# Sponsors
-SPONSOR_EXPIRATES = False
-SPONSOR_EXPIRE_ON_MONTHS = 12
-SPONSOR_LOGO_WIDTH = 200
-SPONSOR_LOGO_HEIGHT = None
