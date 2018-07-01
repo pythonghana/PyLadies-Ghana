@@ -7,7 +7,7 @@
 {% block body %}
     <h2 class="with-actions">
         {% trans "Announcements" %}
-        <a class="button" href="{% url "pinax_announcements:announcement_create" %}">
+        <a class="button" href="{% url 'pinax_announcements:announcement_create' %}">
             {% trans "Add New Announcement" %}
         </a>
     </h2>
@@ -26,7 +26,7 @@
                     {% endif %}
                 </div>
                 <div class="announcement-actions">
-                    <a href="{% url "pinax_announcements:announcement_update" pk=announcement.pk %}" class="announcement-edit-link">
+                    <a href="{% url 'pinax_announcements:announcement_update' pk=announcement.pk %}" class="announcement-edit-link">
                         <i class="fas fa-pencil-alt"></i>
                         {% trans "Edit" %}
                     </a>

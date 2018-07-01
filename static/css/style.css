@@ -3,11 +3,11 @@ Theme Name:
 Author: yaminncco
 
 Colors:
-	Body 		  : #868F9B
-	Headers 	: #10161A
-	Primary 	: #6195FF
-	Dark      : #FCFCFF
-	Grey 		  : #F4F4F4 #FAFAFA #EEE
+    Body          : #868F9B
+    Headers     : #10161A
+    Primary     : #6195FF
+    Dark      : #FCFCFF
+    Grey          : #F4F4F4 #FAFAFA #EEE
 
 Fonts: Montserrat Varela Round
 
@@ -38,7 +38,7 @@ Table OF Contents
 ------------------------------------*/
 
 /*------------------------------------*\
-	General
+    General
 \*------------------------------------*/
 
 
@@ -202,10 +202,10 @@ ul, ol {
 
 .title:after {
     content:"";
-  	display:block;
-  	height:4px;
-  	width:40px;
-  	background-color: #6195FF;
+    display:block;
+    height:4px;
+    width:40px;
+    background-color: #6195FF;
     margin-top: 20px;
 }
 
@@ -219,7 +219,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
     height: 40px;
     width: 100%;
     border: none;
-	  background: #F4F4F4;
+      background: #F4F4F4;
     border-bottom: 2px solid #EEE;
     color: #354052;
     padding: 0px 10px;
@@ -273,7 +273,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 
 /*------------------------------------*\
-	Logo
+    Logo
 \*------------------------------------*/
 
 .navbar-brand {
@@ -286,11 +286,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 #nav:not(.nav-transparent):not(.fixed-nav) .navbar-brand .logo-alt {
-	display: none;
+    display: none;
 }
 
 #nav.nav-transparent:not(.fixed-nav) .navbar-brand .logo {
-	display: none;
+    display: none;
 }
 
 #nav.fixed-nav .navbar-brand .logo-alt {
@@ -308,7 +308,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 
 /*------------------------------------*\
-	Navigation
+    Navigation
 \*------------------------------------*/
 
 #nav {
@@ -587,7 +587,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 
 /*------------------------------------*\
-	Header
+    Header
 \*------------------------------------*/
 
 header {
@@ -637,7 +637,7 @@ header {
 
 
 /*------------------------------------*\
-	About
+    About
 \*------------------------------------*/
 
 .about {
@@ -682,7 +682,7 @@ header {
 
 
 /*------------------------------------*\
-	Portfolio
+    Portfolio
 \*------------------------------------*/
 
 .work {
@@ -797,7 +797,7 @@ header {
 
 
 /*------------------------------------*\
-	Services
+    Services
 \*------------------------------------*/
 
 .service {
@@ -843,7 +843,7 @@ header {
 }
 
 /*------------------------------------*\
-	Why choose us
+    Why choose us
 \*------------------------------------*/
 
 .feature {
@@ -859,7 +859,7 @@ header {
 }
 
 /*------------------------------------*\
-	Numbers
+    Numbers
 \*------------------------------------*/
 
 .number {
@@ -880,7 +880,7 @@ header {
 
 
 /*------------------------------------*\
-	Pricing
+    Pricing
 \*------------------------------------*/
 
 .pricing {
@@ -974,7 +974,7 @@ header {
 }
 
 /*------------------------------------*\
-	Testimonial
+    Testimonial
 \*------------------------------------*/
 
 .testimonial {
@@ -1010,7 +1010,7 @@ header {
 
 
 /*------------------------------------*\
-	Team
+    Team
 \*------------------------------------*/
 
 .team {
@@ -1114,7 +1114,7 @@ header {
 
 
 /*------------------------------------*\
-	Blog
+    Blog
 \*------------------------------------*/
 
 .blog {
@@ -1143,7 +1143,7 @@ header {
 }
 
 /*------------------------------------*\
-	Blog post
+    Blog post
 \*------------------------------------*/
 
 #main .blog .blog-content {
@@ -1300,7 +1300,7 @@ header {
 }
 
 .reply-form form .input, .reply-form form .input , .reply-form form textarea {
-	margin-bottom:20px;
+    margin-bottom:20px;
 }
 
 .reply-form form .input, .reply-form form .input {
@@ -1314,7 +1314,7 @@ header {
 
 
 /*------------------------------------*\
-	Blog sidebar
+    Blog sidebar
 \*------------------------------------*/
 
 #aside .widget {
@@ -1338,7 +1338,7 @@ header {
 #aside .widget-search .search-btn {
     position: absolute;
     right: 0px;
-	  bottom: 0px;
+      bottom: 0px;
     width: 40px;
     height: 40px;
     border: none;
@@ -1428,7 +1428,7 @@ header {
 
 
 /*------------------------------------*\
-	Contact
+    Contact
 \*------------------------------------*/
 
 .contact {
@@ -1461,7 +1461,7 @@ header {
 }
 
 /*------------------------------------*\
-	Footer
+    Footer
 \*------------------------------------*/
 
 #footer {
@@ -1508,7 +1508,7 @@ header {
 
 
 /*------------------------------------*\
-	Responsive
+    Responsive
 \*------------------------------------*/
 
 
@@ -1516,17 +1516,17 @@ header {
 
 @media only screen and (max-width: 767px) {
   .section-header h2.title {
-  		font-size:31.5px;
-	}
+        font-size:31.5px;
+    }
 
   .main-btn , .default-btn , .outline-btn , .white-btn  {
-  		padding: 8px 22px;
-  		font-size:14px;
-	}
+        padding: 8px 22px;
+        font-size:14px;
+    }
 
   .home-content h1 {
-		font-size:36px;
-	}
+        font-size:36px;
+    }
 
   .header-wrapper h2 {
       margin-bottom: 20px;
@@ -1542,12 +1542,12 @@ header {
 
 @media only screen and (max-width: 480px) {
   #portfolio [class*='col-xs'] {
-		  width:100%;
-	}
+          width:100%;
+    }
 
   #numbers [class*='col-xs'] {
-		  width:100%;
-	}
+          width:100%;
+    }
 
   .contact-form .input:nth-child(1), .contact-form .input:nth-child(2) {
       width: 100%;
@@ -1589,7 +1589,7 @@ header {
 
 
 /*------------------------------------*\
-	Owl theme
+    Owl theme
 \*------------------------------------*/
 
 /* -- dots -- */
@@ -1605,8 +1605,8 @@ header {
     background: #6195FF;
 }
 .owl-theme .owl-dots .owl-dot.active span {
-	  background: #6195FF;
-	  width:20px;
+      background: #6195FF;
+      width:20px;
 }
 
 /* -- nav -- */
@@ -1629,12 +1629,12 @@ header {
             transform: translateY(-50%);
     background: #6195FF;
     color: #FFF;
-  	padding: 0px;
-  	width: 50px;
-  	height: 50px;
-  	border-radius:3px;
-  	line-height: 50px;
-  	margin: 0;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius:3px;
+    line-height: 50px;
+    margin: 0;
 }
 
 .owl-theme .owl-prev {
@@ -1652,25 +1652,25 @@ header {
 
 
 /*------------------------------------*\
-	Back to top
+    Back to top
 \*------------------------------------*/
 
 #back-to-top {
-  	display:none;
-  	position: fixed;
-  	bottom: 20px;
-  	right: 20px;
-  	width: 50px;
-  	height: 50px;
-  	line-height: 50px;
-  	text-align: center;
-  	background: #6195FF;
-  	border-radius:3px;
-  	color: #FFF;
-  	z-index: 9999;
+    display:none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #6195FF;
+    border-radius:3px;
+    color: #FFF;
+    z-index: 9999;
     -webkit-transition: 0.2s opacity;
     transition: 0.2s opacity;
-  	cursor: pointer;
+    cursor: pointer;
 }
 
 #back-to-top:after {
@@ -1683,7 +1683,7 @@ header {
 }
 
 /*------------------------------------*\
-	Preloader
+    Preloader
 \*------------------------------------*/
 
 
@@ -1739,10 +1739,10 @@ header {
 }
 
 @-webkit-keyframes preload {
-	0% {
-	   -webkit-transform:scale(0);
-	           transform:scale(0);
-	}
+    0% {
+       -webkit-transform:scale(0);
+               transform:scale(0);
+    }
   50% {
     -webkit-transform:scale(1);
             transform:scale(1);
@@ -1754,10 +1754,10 @@ header {
 }
 
 @keyframes preload {
-	0% {
-	   -webkit-transform:scale(0);
-	           transform:scale(0);
-	}
+    0% {
+       -webkit-transform:scale(0);
+               transform:scale(0);
+    }
   50% {
     -webkit-transform:scale(1);
             transform:scale(1);

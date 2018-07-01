@@ -54,12 +54,9 @@ INSTALLED_APPS = [
     'photologue',
     'sortedm2m',
     'crispy_forms',
-    #'sorl.thumbnail',
-    #'pure_pagination',
-    #'pybb',
-    #'account',
-    #'captcha',
-
+    'cloudinary_storage',
+    'cloudinary',
+    'pwa',
 
 
     # my_apps
@@ -75,14 +72,12 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'pybb.context_processors.processor',
 ]
 
 ROOT_URLCONF = 'PyLadiesGhana.urls'
@@ -145,11 +140,17 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Cloudinary credentials
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME':'dzoy9hfxw',
+    'API_KEY':'596939375444749',
+    'API_SECRET': 'j-4AM-DWXceFTc4L9kMwtQ4y2NE',
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'static')
@@ -160,10 +161,14 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 
 # Media Files ( User Media Uploads )
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 # Django - Jet theme colors for admin backend.
 JET_DEFAULT_THEME = 'light-gray'
@@ -212,19 +217,17 @@ PAGINATION_SETTINGS = {
     'SHOW_FIRST_PAGE_WHEN_INVALID': True,
 }
 
-# Pybb
-#AUTH_PROFILE_MODULE = 'pybb.Profile'
-#PYBB_PROFILE_RELATED_NAME = None
+# Progressive Web App Settings.
+PWA_APP_NAME = 'PyLadies Ghana'
+PWA_APP_DESCRIPTION = "PyLadies Ghana is Mentor-ship group in Ghana focused on helping more women become active participants and leaders in the Python open-source Community."
+PWA_APP_THEME_COLOR = '#0A0302'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_START_URL = '/'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/img/pyladies.png',
+        'sizes': '160x160'
+    }
+]
 
 
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-#PYBB_TEMPLATE = "base.html"
-#PYBB_NICE_URL = True
-#PYBB_ATTACHMENT_ENABLE = True
-
-# Sponsors
-SPONSOR_EXPIRATES = False
-SPONSOR_EXPIRE_ON_MONTHS = 12
-SPONSOR_LOGO_WIDTH = 200
-SPONSOR_LOGO_HEIGHT = None

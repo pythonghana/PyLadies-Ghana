@@ -17,8 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
-#import django
-#from account.views import ChangePasswordView, SignupView, LoginView
+
 
 urlpatterns = [
     path('jet/', include('jet.urls', 'jet')),  # Django JET URLS
@@ -35,16 +34,12 @@ urlpatterns = [
     path('blog/', include("pinax.blog.urls", namespace="pinax_blog")),
     path('announcements/', include("pinax.announcements.urls", namespace="pinax_announcements")),
     path('photologue/', include('photologue.urls', namespace='photologue')),
-    #path("accounts/password/", ChangePasswordView.as_view(),name="auth_password_change"),
-    #path("accounts/signup/",SignupView.as_view(),name="registration_register"),
-    #path("accounts/login/", LoginView.as_view(), name="auth_login"),
-    #path('accounts/', include('django.contrib.auth.urls')),
-    #path('captcha/', include('captcha.urls')),
-    #path('forum/', include('pybb.urls', namespace='pybb')),
+    path('', include('pwa.urls')),
 ]   
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 # Admin Header Settings
 admin.site.site_header = "PyLadies Ghana Admin"
