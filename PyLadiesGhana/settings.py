@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
@@ -54,7 +55,6 @@ INSTALLED_APPS = [
     'photologue',
     'sortedm2m',
     'crispy_forms',
-    'cloudinary_storage',
     'cloudinary',
     'pwa',
 
@@ -141,11 +141,11 @@ USE_L10N = True
 USE_TZ = True
 
 # Cloudinary credentials
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME':'dzoy9hfxw',
-    'API_KEY':'596939375444749',
-    'API_SECRET': 'j-4AM-DWXceFTc4L9kMwtQ4y2NE',
-}
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME':'dzoy9hfxw',
+#     'API_KEY':'596939375444749',
+#     'API_SECRET': 'j-4AM-DWXceFTc4L9kMwtQ4y2NE',
+# }
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
