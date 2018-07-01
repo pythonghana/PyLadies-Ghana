@@ -205,9 +205,6 @@ JET_THEMES = [
     }
 ]
 
-# Path to Google Analytics client_secrets.json
-JET_MODULE_GOOGLE_ANALYTICS_CLIENT_SECRETS_FILE = os.path.join(BASE_DIR, 'client_secrets.json')
-
 # Django SITE_ID
 SITE_ID = 1
 
