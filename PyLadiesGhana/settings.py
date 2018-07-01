@@ -141,9 +141,9 @@ USE_TZ = True
 
 #Cloudinary credentials
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME':'',
-    'API_KEY':'',
-    'API_SECRET': '',
+    'CLOUD_NAME':'hppuvlq49',
+    'API_KEY':'421338748535928',
+    'API_SECRET': 'fxwkDozWpd0wlxiF8mI7M_BpssU',
 }
 
 # Static files (CSS, JavaScript, Images)
