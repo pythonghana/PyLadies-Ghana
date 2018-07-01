@@ -166,7 +166,7 @@ STATICFILES_FINDERS = (
 # Media Files ( User Media Uploads )
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
-#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Django - Jet theme colors for admin backend.
 JET_DEFAULT_THEME = 'light-gray'
