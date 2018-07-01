@@ -156,16 +156,12 @@ STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-<<<<<<< HEAD
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-=======
->>>>>>> 554f710c28e36abd242d632f7e3d2a1080b79235
 
 # Media Files ( User Media Uploads )
 MEDIA_URL = 'media/'
