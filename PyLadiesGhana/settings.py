@@ -140,12 +140,12 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Cloudinary credentials
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME':'dzoy9hfxw',
-#     'API_KEY':'596939375444749',
-#     'API_SECRET': 'j-4AM-DWXceFTc4L9kMwtQ4y2NE',
-# }
+#Cloudinary credentials
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME':'dzoy9hfxw',
+    'API_KEY':'596939375444749',
+    'API_SECRET': 'j-4AM-DWXceFTc4L9kMwtQ4y2NE',
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
@@ -166,7 +166,6 @@ STATICFILES_DIR = [
 
 # Media Files ( User Media Uploads )
 MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # # Django - Jet theme colors for admin backend.
