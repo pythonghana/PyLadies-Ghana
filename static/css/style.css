@@ -598,6 +598,7 @@ header {
     height: 100vh;
 }
 
+
 #home .home-wrapper {
     position: absolute;
     left: 0px;
@@ -1766,4 +1767,9 @@ header {
     -webkit-transform:scale(0);
             transform:scale(0);
   }
+}
+
+.sponsor-container {
+    padding-left: 20px;
+    padding-right: 80px;
 }

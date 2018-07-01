@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load i18n static %}
-{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Support Us | Python Ladies Ghana" %}{% endif %}{% endblock %}
+{% block title %} Support Us {% endblock%}
 
 
 {% block content %}
@@ -21,21 +21,21 @@
                           <div class="row">
 							      
 							      	<div class="container">
-							          <center>  <h3>Support Us<br><small>Become A Sponsor</small></h3><br>
-							            <h6>Why we need sponsors</h6>
+							          <center>  <br ><h3>Support Us<br ><small>Become A Sponsor</small></h3><br >
+							            <h4>Why we need sponsors</h6>
 							            <p>Python Ghana Ladies is wholly organized by volunteers. We therefore need sponsors to help us cover the costs of:
-							            <ul>
-							                -<li>basic running expenses;</li>
-							                -<li>provide a decent location to host Meetups;</li>
-							                -<li>reimburse the travel and accommodation costs of our speakers;</li>
-											-<li>provide financial assistance to participant who cannot otherwise afford to attend the Meetups;</li>
-							                -<li>catering and refreshments;</li>
-							                -<li>educational materials for the tutorials;</li>
-							                -<li>video recording of talks!</li>
+							            <ul class="list-group" id="sponsor-container">
+							                <li class="list-group-item list-group-item-info">basic running expenses;</li>
+							                <li class="list-group-item list-group-item-info">provide a decent location to host Meetups;</li>
+							                <li class="list-group-item list-group-item-info">reimburse the travel and accommodation costs of our speakers;</li>
+											<li class="list-group-item list-group-item-success">provide financial assistance to participant who cannot otherwise afford to attend the Meetups;</li>
+							                <li class="list-group-item list-group-item-success">catering and refreshments;</li>
+							                <li class="list-group-item list-group-item-success">educational materials for the tutorials;</li>
+							                <li class="list-group-item list-group-item-success">video recording of talks!</li>
 							            </ul></center> 
 							              <br><br>
 
-							              <h6>Sponsor Packages</h6>
+							       <!--       <h6>Sponsor Packages</h6>
 							              <table>
 							                  <tr>
 							                      <td><h5 style="color: #000; text-shadow: 2px 2px 3px #cd7f32">Bronze <span><span>($500)</span></span></h5></td>
@@ -101,10 +101,10 @@
 											<p> Our special sponsorship package is designed for organisations and individuals looking to make a contribution to building a stronger Python community in Ghana through PyCon Ghana. If you would like to Sponsor other aspects of the conference such as Catering, Media, Internet or any form of sponsorship both in cash or in kind, please reach out to us for more Information.
 											</p>
 											</br>
-											<center><p> <a href="{% static 'files/Prospectus.pdf' %}" download="Python Ghana Ladies Prospectus.pdf"><button style="font-size:16px"><b>Download our Prospectus HERE</b><i class="fa fa-download"></i></button></a> <br><br></center>
+											<center><p> <a href="{% static 'files/Prospectus.pdf' %}" download="Python Ghana Ladies Prospectus.pdf"><button style="font-size:16px"><b>Download our Prospectus HERE</b><i class="fa fa-download"></i></button></a> <br><br></center> -->
 
 
-											<center><p><b>If you are interested and wish to sponsor PyCon Ghana, then please contact us via
+											<center><p><b>If you are interested and wish to sponsor PyLadies Ghana, then please contact us via
 							                  <a href="mailto:ghana@pyladies.com">ghana@pyladies.com</a>.</b><br> You can see our current Sponsors <a href="{% url 'sponsors:sponsors' %}">Here</a></p></center>
 
 							          </div>

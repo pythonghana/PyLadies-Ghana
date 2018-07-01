@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load i18n static %}
-{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Sponsors | Python Ghana Ladies" %}{% endif %}{% endblock %}
+{% block title %} Sponsors {% endblock %}
 
 {% block content %}
 <header id="top" class="sub-header">
@@ -22,7 +22,7 @@
                             <p>
                               <b>Python Ghana Ladies is generously sponsored by organisations that support its aim</b>
                             </p>
-                            <p>Would you like to join them? <a href="{% url 'sponsors:support_us'%}"><b>See How to sponsor PyCon Ghana Ladies.</b></a></p></center><br><br>
+                            <p>Would you like to join them? <a href="{% url 'sponsors:support_us'%}"><b>See How to sponsor Python Ghana Ladies.</b></a></p></center><br><br>
 
                      {% if diamond %}
 
@@ -107,7 +107,7 @@
                         </div><br><br>
                     {% endif %}
 
-                     <hr style="background-color: #fff;border-top: 2px dashed #8c8b8b;width: 1000px;height: 0px;"> 
+                     <!--<hr style="background-color: #fff;border-top: 2px dashed #8c8b8b;width: 1000px;height: 0px;">--> 
 
                             {% if individuals %}
                     <h6 style="color: #000; text-shadow: 2px 2px 3px "><b>Individual Sponsors</b></h6>
