@@ -45,7 +45,7 @@ python-http-client==3.1.0
 python-utils==2.3.0
 pytz==2017.3
 requests==2.20.0
-rsa==3.4.2
+rsa==4.1
 sendgrid==5.4.1
 six==1.11.0
 Unidecode==1.0.22
